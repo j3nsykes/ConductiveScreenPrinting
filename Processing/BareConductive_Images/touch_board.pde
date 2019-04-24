@@ -53,7 +53,7 @@ void serialEvent(Serial p) {
   for (int i = firstElectrode; i < lastElectrode; i++) {
     //constant stream of touch data from electrode E11, E10 and E09
 
-    printArray("filteredData"+" "+"E"+i+" :"+filteredData[i]);
+   // printArray("filteredData"+" "+"E"+i+" :"+filteredData[i]);
 
 
     proximity[i]= map(filteredData[i], 0, 1023, 0, height);
@@ -68,7 +68,7 @@ void serialEvent(Serial p) {
       println("Electrode " + i + " was touched");
       lastStatus[i] = 1;
       triggered=true;
-      i = index;
+      index=i;
     } else if (lastStatus[i] == 1 && status[i] == 0) {
       // released
       println("Electrode " + i + " was released");

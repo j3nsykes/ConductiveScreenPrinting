@@ -10,7 +10,7 @@ float[] proximity;
 int lf = 10;          // ASCII linefeed
 int firstElectrode=0;
 int lastElectrode=4;
-
+boolean triggered=false;
 void updateArraySerial(int[] array) {
   if (array == null) {
     return;

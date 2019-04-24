@@ -67,13 +67,12 @@ void serialEvent(Serial p) {
 
       println("Electrode " + i + " was touched");
       lastStatus[i] = 1;
-      triggered=true;
-      i = index;
+
     } else if (lastStatus[i] == 1 && status[i] == 0) {
       // released
       println("Electrode " + i + " was released");
       lastStatus[i] = 0;
-      triggered=false;
+      
     }
   }
 }

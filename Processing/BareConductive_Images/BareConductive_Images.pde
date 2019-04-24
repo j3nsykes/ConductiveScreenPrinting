@@ -25,11 +25,8 @@ void draw() {
   //visualise the data
   noStroke();
   fill(200);
-  //rect(50, 0, 50, height-proximity[0]);//electron 1
-  //rect(150, 0, 50, height-proximity[1]); //electron 2
-  //rect(250, 0, 50, height-proximity[2]); //electron 3
-  //rect(350, 0, 50, height-proximity[3]); //electron 4
-  if(triggered){
+
+  if(triggered){ //remove the if condition for image to stay on screen 
   image(imgs[index], 0, 0, width, height);
   }
   else{

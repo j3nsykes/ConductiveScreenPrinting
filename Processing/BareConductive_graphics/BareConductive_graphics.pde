@@ -20,7 +20,7 @@ void draw() {
   noStroke();
   fill(255, 0, 0);
 
-  switch(key) {
+  switch(index) {
   case 0:
     //draw something
 

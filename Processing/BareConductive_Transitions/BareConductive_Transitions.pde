@@ -8,7 +8,7 @@ Movie movie1, movie2;
 float fade;
 
 void setup() {
-  //touchBoardSetup();
+  touchBoardSetup();
   size(500, 500);
   background(0);
   movie1 = new Movie(this, "0.mp4");
@@ -32,7 +32,7 @@ void draw() {
   tint(255, 255); //fully on fully transparent 
   image(movie1, 0, 0, width, height);
   tint(255, fade);//0 is fully off 255 is fully on. can change this number to fade in and out 
-  image(movie1, 0, 0, width, height);
+  image(movie2, 0, 0, width, height);
 }
 
 
